@@ -153,11 +153,32 @@
     </div><!-- /.navbar-wrapper -->
 
 
-    <div class="span6">
-    <br><br><br><br><br>
+    <div class="span5">
+      <br><br><br><br><br>
       <h1>Annotations</h1>
       <p>Under Construction.. </p>
-
+      <br>
+      <br>
+      <br>
+      <p> <h4>YouTube video ID and Annotation extractor</h4></p>
+      <input type='text' class="field span4" id='link' placeholder="Enter YouTube URL here.." value="http://www.youtube.com/watch?v=lExW80sXsHs" />
+      <br>
+      <input type='button' onclick='setLinkDisplay()' value='Extract ID' />
+      <!-- <input type='button' onclick='openLink()' value='View Annotations' /> -->
+      <input type='button' onclick='getAnnotations()' value='Get Annotations' />
+      <a id="linktest" href="#" >testlink</a>
+      <br><br>
+      <input class="field span2" type='text' id='extractedId' placeholder="Extracted ID" readonly="true" />
+      <br><br>
+      <textarea class="field span4" rows="10" id='extractedAnnotations' placeholder="Extracted Annotations" ></textarea>
+      <br>
+      <input type='button' value='Save' />
+      <input type='button' value='Publish' />
+    </div>
+    <div class="span5">
+      
+      <iframe width="560" height="315" src="//www.youtube.com/embed/lExW80sXsHs?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
       <!-- FOOTER -->
@@ -189,5 +210,5 @@
     <script src="./carousel files/bootstrap-typeahead.js"></script>
     <script src="./carousel files/holder.js"></script>
   
-
+    <script src="annotations.js" />
 </body></html>
